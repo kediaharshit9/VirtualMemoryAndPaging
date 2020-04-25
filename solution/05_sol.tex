@@ -1,0 +1,83 @@
+\documentclass[addpoints,11pt,a4paper]{exam}
+\renewcommand*\half{.5}
+\linespread{1.05}       
+% \usepackage[scaled]{helvet} 
+\usepackage{courier} 
+\usepackage{tikz,pgfplots,pgfplotstable}
+\usepackage{graphicx}
+\usepackage[bitstream-charter]{mathdesign}
+\usepackage[T1]{fontenc}
+
+% \usepackage{eulervm}
+\normalfont
+\usepackage{caption}
+\usepackage[T1]{fontenc}
+% \usepackage{mathrsfs}
+\usepackage{paralist}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{psfrag}
+\usepackage{fullpage}
+\usepackage{ifthen}
+\usepackage{marvosym}
+
+\title{CS3500 Lab 7}
+\author{Name, Roll number}
+\date{Date: 20th Sep 2019}
+\begin{document}
+
+\lstset{basicstyle=\footnotesize\ttfamily,breaklines=true}
+\lstset{framextopmargin=45pt,frame=bottomline}
+
+\maketitle
+\begin{questions}
+
+\question 
+\begin{itemize}
+	\item Total time taken by first three accesses = 0000 (mean) and 0000 (variance)
+	\item Total time taken by second three accesses = 0000 (mean) and 0000 (variance)
+	\item Total time taken by third three accesses = 0000 (mean) and 0000 (variance)
+	\item tx is less than ty because
+	\item ty is less than tz because
+\end{itemize}
+
+\question 
+\begin{itemize}
+	\item Time taken for 10 nops: 
+	\item Time taken for 100 nops:
+	\item Time taken for 1000 nops: 
+	\item Time taken for 2000 nops:
+	\item Time taken for 4000 nops:
+	\item Time taken for 5000 nops:
+	\item Reasoning: 
+\end{itemize}
+
+\question 
+\begin{itemize}
+	\item Plot of variation in time
+	\pgfplotstableread[col sep = comma]{data.csv}\loadedtable
+	\begin{figure}[h!]
+  	\begin{tikzpicture}
+      \begin{axis}[xlabel=i, ylabel=Time, width=\textwidth, height=10cm]
+            \addplot[scatter, mark size = 0.5] table [x=column 1, y=column 2,
+                  col sep=comma] {\loadedtable};
+      \end{axis}
+  	\end{tikzpicture}
+  	\end{figure}
+  	\item Reasoning on the plots: 
+  	\item Conclusions on size of TLB: 
+\end{itemize}
+
+\question 
+\begin{itemize}
+	\item Total time taken by first three accesses = 0000 (mean) and 0000 (variance)
+	\item Total time taken by second three accesses = 0000 (mean) and 0000 (variance)
+	\item Total time taken by third three accesses = 0000 (mean) and 0000 (variance)
+	\item tx is less than ty because
+	\item ty is less than tz because
+	\item Contrast to Question 1: 
+\end{itemize}
+
+\end{questions}
+
+\end{document}
